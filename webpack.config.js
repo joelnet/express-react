@@ -11,7 +11,6 @@ module.exports = {
   },
   plugins: [new CopyPlugin([{ from: 'src/client/index.html' }])],
   devServer: {
-    //writeToDisk: true,
     open: true,
     proxy: {
       '/api': {

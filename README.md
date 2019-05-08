@@ -1,5 +1,17 @@
 # Express and React Starter Kit
 
+Express. React. Simple.
+
+![Daemon Screenshot](https://raw.githubusercontent.com/joelnet/express-react/master/media/daemon-screenshot.png)
+
+## Install
+
+```bash
+git clone https://github.com/joelnet/express-react.git
+cd express-react
+npm ci
+```
+
 ## Development
 
 ```bash

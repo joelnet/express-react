@@ -1,8 +1,9 @@
-const config = require('config')
 const express = require('express')
 const router = express.Router()
 
-router.use(express.static(config.get('server.public')))
+router.use('/api/message', (req, res) => {
+  res.json({ message: 'Hello JSON' })
+})
 
 module.exports = {
   router

@@ -7,6 +7,7 @@
   "scripts": {
     "clean": "rimraf public",
     "cz": "git-cz",
+    "build": "npm run clean && NODE_ENV=production webpack --mode production",
     "build:dev": "npm run clean && NODE_ENV=development webpack --mode development",
     "dev": "npm run build:dev && concurrently --kill-others --names server,client --prefix-colors green,yellow  'nodemon --exec \"node src/server/app.js\" --ignore public/ --ignore src/client/' 'webpack-dev-server'",
     "start": "NODE_ENV=production node src/server/app.js",
